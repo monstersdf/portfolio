@@ -1,10 +1,10 @@
 // async function init () {
 //     const node = document.querySelector("#type-text")
-    
+
 //     await sleep(1000)
 //     node.innerText = ""
 //     await node.type('ASHISH SINGH, ')
-    
+
 //     while (true) {
 //       await node.type('\n FRONT-END!')
 //       await sleep(2000)
@@ -14,25 +14,25 @@
 //       await node.delete('WEB-DEVELOPER!')
 //     }
 //   }
-  
-  
+
+
 //   // Source code 🚩
-  
+
 //   const sleep = time => new Promise(resolve => setTimeout(resolve, time))
-  
+
 //   class TypeAsync extends HTMLSpanElement {
 //     get typeInterval () {
 //       const randomMs = 100 * Math.random()
 //       return randomMs < 50 ? 10 : randomMs
 //     }
-    
+
 //     async type (text) {
 //       for (let character of text) {
 //         this.innerText += character
 //         await sleep(this.typeInterval)
 //       }
 //     }
-    
+
 //     async delete (text) {
 //       for (let character of text) {
 //         this.innerText = this.innerText.slice(0, this.innerText.length -1)
@@ -40,10 +40,10 @@
 //       }
 //     }
 //   }
-  
+
 //   customElements.define('type-async', TypeAsync, { extends: 'span' })
-  
-  
+
+
 //   init()
 
 // new animation 
@@ -52,15 +52,15 @@
 //     // The string to resolve
 //     const resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
 //     const combinedOptions = Object.assign({}, options, {resolveString: resolveString});
-    
+
 //     function getRandomInteger(min, max) {
 //       return Math.floor(Math.random() * (max - min + 1)) + min;
 //     };
-    
+
 //     function randomCharacter(characters) {
 //       return characters[getRandomInteger(0, characters.length - 1)];
 //     };
-    
+
 //     function doRandomiserEffect(options, callback) {
 //       const characters = options.characters;
 //       const timeout = options.timeout;
@@ -87,7 +87,7 @@
 //         }
 //       }, options.timeout);
 //     };
-    
+
 //     function doResolverEffect(options, callback) {
 //       const resolveString = options.resolveString;
 //       const characters = options.characters;
@@ -140,11 +140,11 @@
 // function callback() {
 //   setTimeout(() => {
 //     counter ++;
-    
+
 //     if (counter >= strings.length) {
 //       counter = 0;
 //     }
-    
+
 //     let nextOptions = Object.assign({}, options, {resolveString: strings[counter]});
 //     resolver.resolve(nextOptions, callback);
 //   }, 1000);
@@ -153,9 +153,28 @@
 // resolver.resolve(options, callback);
 
 
-  const navLinks = document.querySelector('.nav-links');
-  const burger = document.querySelector('.burger');
-  burger.addEventListener("click", () =>{
-    navLinks.classList.toggle('open');
-  });
+const navLinks = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
+burger.addEventListener("click", () => {
+  navLinks.classList.toggle('open');
+});
 
+// dark mode js 
+const night = () => {
+  const moon = document.querySelector(".btn2");
+  moon.addEventListener('click', () => {
+    console.log("clicked!")
+    var element = document.body;
+    element.classList.add("dark")
+  element.classList.remove('light')
+    });
+
+}
+const days = () => {
+  const sun = document.querySelector('.btn1');
+  sun.addEventListener('click', () => {
+    var element = document.body;
+    element.classList.add("light");
+
+  })
+}
