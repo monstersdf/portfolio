@@ -161,7 +161,7 @@ burger.addEventListener("click", () => {
 
 // dark mode js 
 const night = () => {
-  const moon = document.querySelector(".btn2");
+  const moon = document.querySelector(".moon");
   moon.addEventListener('click', () => {
     console.log("clicked!")
     var element = document.body;
@@ -171,7 +171,7 @@ const night = () => {
 
 }
 const days = () => {
-  const sun = document.querySelector('.btn1');
+  const sun = document.querySelector('.sun');
   sun.addEventListener('click', () => {
     var element = document.body;
     element.classList.add("light");

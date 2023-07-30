@@ -13,10 +13,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- google font  -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400;500&family=Zilla+Slab:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen&amp;display=swap" rel="stylesheet">
 
+    <!-- AOS animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -49,33 +51,6 @@
             </div>
         </nav>
         <div class="welcome-msg">
-            <!-- <h1 class="myself">
-                <span>Ashish Singh</span>
-                <br>
-                <span>FRONT-END</span>
-                <br>
-                <span>WEB DEVELOPER</span>
-                <br>
-            </h1> -->
-            <!-- <span is="type-async" id="type-text" style="letter-spacing: 5px;">...</span>
-            <br> -->
-            <!-- <span class="blinking-cursor">_</span> -->
-
-            <!-- new animation  -->
-            <!-- <div class="containerd">
-    <h1 class="heading" data-target-resolver></h1>
-  </div> -->
-
-            <!-- new animaion  -->
-
-            <!-- <div class='line border1'>
-                <h2 class='flipX'>ASHISH SINGH</h2>
-            </div>
-            <div class="role">
-                <h2>FRONT-END</h2>
-                <h2>WEB-DEVELOPER</h2>
-            </div> -->
-            <!-- <p>Welcome to my portfolio: <br> -->
             </p>
             <div class="role">
                 <h1>
@@ -96,18 +71,68 @@
             </div>
             <div class="modeChanger">
                 <div class="twomodes">
-                    <div class="sun">
-                        <button onclick="days()" class="btn1"><i class="fa-regular fa-sun"  style="color: #d78614;"></i></button>
+                    <div class="sun" onclick="days()">
+                        <button class="btn1"><i class="fa-regular fa-sun" style="color: #d78614;"></i></button>
                     </div>
-                    <div class="moon">
-                        <button onclick="night()" class="btn2"><i class="fa-regular fa-moon " style="color: #d78614;"></i></button>
+                    <div class="moon" onclick="night()">
+                        <button class="btn2"><i class="fa-regular fa-moon " style="color: #d78614;"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-
     </header>
+    <div class="main">
+        
+        <div class="about-section">
+            <!-- <div class="about-me">
+                <h2>ABOUT ME</h2>
+                <p>/ashi-sh sin-gh/</p>
+            </div> -->
+         <div class="img-sec child" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+          </div>
+            <div class="myself child" style="overflow-x: hidden; overflow-y: hidden;" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
+                <p class="firstpara">Hello World! I'm Ashish Singh, a Front-End Web Developer based out of Mumbai. I
+                    love combining the
+                    worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and
+                    applications.</p>
+                <p>Technology has power to change anything and society follows it.The move towards increasing
+                    inclusivity and diversity in the industry through representation is of importance to me.</p>
+                <p>
+                    I'm excited to make the hop and continue increasing my skills with the right company. Drop me a line
+                    and/or your favourite thing to make in the contact form below or check me out at:
+                </p>
+                <ul style="list-style: none;" class="contact-logo">
+                    <li><a href="#"><i class="fa-brands fa-github githuba" style="color: black"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-linkedin" style="color: #0a0a0a;"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-twitter" style="color: #0a0a0a;"></i>
+                        </a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook" style="color: #0a0a0a;"></i></a></li>
 
+                </ul>
+            </div>
+
+        </div>
+        <div class="about-section">
+            <div class="img-sec child">
+
+            </div>
+            <div class="myself child">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto iste vel voluptate rem molestias,
+                illo consequatur explicabo. Provident animi amet fugiat sequi dicta. Consequatur molestias numquam
+                repellat ipsam ab!
+            </div>
+        </div>
+
+    </div>
+    <!-- AOS script  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable :'mobile'
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

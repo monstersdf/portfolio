@@ -11,10 +11,11 @@
 
 body {
   font-family: 'Sen', sans-serif;
-  font-style: 16px;
+  font-size: 16px;
   background: var(--secondry);
   color: var(--primary);
   /* perspective: 500px; */
+  height: 1000px;
 }
 
 .navbar {
@@ -98,114 +99,12 @@ body {
   font-size: 3em;
 }
 
-/* .linefirst{
-  transform: rotate(-45deg) translate(-5px,6px);
-}
-.linesecond{
-  opacity: 0;
-}
-.linethird{
-  transform: rotate(45deg) translate(-5px,-6px);
-
-} */
-/* .blinking-cursor{
-  user-select: none;
-  animation: blink 1s steps(2, start) infinite;
-
-  @keyframes blink  
-    to
-      visibility: hidden;
-  } */
-
-/* new animation  */
-/* html,
-  body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Unica One', sans-serif;
-    background: #111;
-  } */
-
-/* .containerd {
-    display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    height: 100%;
-    width: 30%;
-  }
-  
-  .heading {
-    color: #eee;
-    font-size: 3rem;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-   */
-
-/* css  */
-/* h2 {
-  font-size: 1em;
-  margin: 0;
-} */
-
-/* crops animations that exceeds one line area */
-/* .line {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-.border1{
-  border-bottom: 5px solid yellow;
- width: fit-content;
-} */
-
-/* flipping class and key frames*/
-/* .flipX {
-  animation: 1s anim-flipX ease infinite;
-} */
-/* 
-@keyframes anim-flipX {
-  0% {
-    opacity: 0;
-    transform: rotateX(90def);
-  }
-
-  50% {
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-
-  100% {
-   
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-} */
 a {
   text-decoration: none;
   color: inherit;
   font-size: 24px;
 }
 
-p {
-  font-weight: 700;
-  text-align: left;
-  font-size: 40px;
-  font-family: Hack, sans-serif;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  letter-spacing: 5px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: shine 5s linear infinite;
-  position: relative;
-}
 
 @keyframes shine {
   0% {
@@ -232,7 +131,7 @@ p {
     letter-spacing: 1rem;
     filter: blur(1.5rem);
   }
-}
+} */
 
 .role h2 {
   font-size: 1em;
@@ -314,43 +213,110 @@ h1 span:nth-child(8) {
 }
 
 /* dark mode css  */
-.dark{
-  background:black;
+.dark {
+  background: black;
   color: #ffff !important;
 }
-.light{
-  background:#fff;
-color: black !important;
+
+.light {
+  background: #fff;
+  color: black !important;
 }
-.modeChanger{
+
+.modeChanger {
   border-radius: 50px;
   position: absolute;
   right: 0;
   border: 1px solid white;
   text-align: center;
   width: 35px;
- margin-right: 0.4em;
+  margin-right: 0.4em;
   height: fit-content;
   cursor: pointer;
-height: 3em;
+  height: 3em;
 }
-.twomodes i{
+
+.twomodes i {
   font-size: 1.4rem;
   color: #f06000;
 }
-.twomodes button{
+
+.twomodes button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
+/* about section css  */
+.about-section {
+  display: flex;
+  margin: 15rem 5.5rem;
+  overflow-x: hidden;
+}
+
+.child {
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.myself {
+  width: 60%;
+  /* margin: 2em 0; */
+}
+
+.contact-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: -1.5em auto;
+}
+
+.contact-logo li {
+  flex-basis: 20%;
+  text-align: center;
+  color: #F8F8F8;
+}
+
+.contact-logo li a {
+  font-size: 2.5rem;
+}
+
+.contact-logo li a i {
+  /* background-color: white; */
+  color: #ffff !important;
+  padding: 0.1em;
+}
+
+.githuba {
+  border-radius: 50px;
+  /* padding: 0.5em auto; */
+}
+
+.myself p {
+  margin: 3rem 0;
+  font-size: 1.3rem;
+  color: #F8F8F8;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
+.img-sec {
+  background-image: url("myimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 620px;
+  width: 35%;
+  margin-right: 30px;
+  border: none;
+}
 
 
 
 
 
 /* media queries  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -402,9 +368,13 @@ height: 3em;
     box-shadow: rgba(2, 12, 27, .3);
     transform: translate(0%);
   }
-
-  .role h1 span {
-    font-size: 0.75em;
+.role h2{
+  font-size: 1.1em;
+  text-align: left;
+}
+  .role h1{
+    font-size: 2em;
+    text-align: left;
   }
 
   .welcome-msg {
@@ -416,7 +386,45 @@ height: 3em;
     line-height: 1.5em;
     font-size: 2em;
     display: flex;
- text-align: center;
+    text-align: center;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow-x: hidden; */
+    /* white-space: nowrap; */
+    margin: 1em 1em;
+  }
+
+  .img-sec {
+    width: 90%;
+    border: none;
+    margin-top: 20em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .myself {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  .myself p {
+    margin: 3rem 0;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+    color: #F8F8F8;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-logo {
+    font-size: medium;
+    margin: 0px 0px;
   }
 
   /* .heading{
