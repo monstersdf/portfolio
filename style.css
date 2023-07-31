@@ -405,9 +405,6 @@ h1 span:nth-child(8) {
     margin-top: 20em;
     margin-left: 2em;
     margin-right: 2em;
-    height: 625px;
-    background-size: cover;
-    background: url('myimg.jpg');
   }
 
   .myself {
