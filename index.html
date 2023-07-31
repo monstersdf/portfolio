@@ -12,6 +12,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- devicons cdn  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- google font  -->
     <link href="https://fonts.googleapis.com/css?family=Sen&amp;display=swap" rel="stylesheet">
 
@@ -31,10 +34,10 @@
 
             </div>
             <ul class="nav-links">
-                <a class="active">
+                <a class="active" href="index.html">
                     <li>Home</li>
                 </a>
-                <a class="borderAnimation">
+                <a class="borderAnimation" href="about.html">
                     <li>About</li>
                 </a>
                 <a class="borderAnimation">
@@ -67,7 +70,7 @@
                     <span>H</span>
                 </h1>
                 <h2>FRONT-END</h2>
-                <h2>WEB-DEVELOPER</h2>
+                <h2 class="line_height">WEB-DEVELOPER</h2>
             </div>
             <div class="modeChanger">
                 <div class="twomodes">
@@ -82,15 +85,16 @@
         </div>
     </header>
     <div class="main">
-        
+
         <div class="about-section">
             <!-- <div class="about-me">
                 <h2>ABOUT ME</h2>
                 <p>/ashi-sh sin-gh/</p>
             </div> -->
-         <div class="img-sec child" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
-          </div>
-            <div class="myself child" style="overflow-x: hidden; overflow-y: hidden;" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
+            <div class="img-sec child" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+            </div>
+            <div class="myself child" style="overflow-x: hidden; overflow-y: hidden;" data-aos="fade-left"
+                data-aos-duration="1000" data-aos-offset="200">
                 <p class="firstpara">Hello World! I'm Ashish Singh, a Front-End Web Developer based out of Mumbai. I
                     love combining the
                     worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and
@@ -102,7 +106,8 @@
                     and/or your favourite thing to make in the contact form below or check me out at:
                 </p>
                 <ul style="list-style: none;" class="contact-logo">
-                    <li><a href="https://github.com/monstersdf"><i class="fa-brands fa-github githuba" style="color: black"></i></a></li>
+                    <li><a href="https://github.com/monstersdf"><i class="fa-brands fa-github githuba"
+                                style="color: black"></i></a></li>
                     <li><a href="#">
                             <i class="fa-brands fa-linkedin" style="color: #0a0a0a;"></i></a></li>
                     <li><a href="#">
@@ -112,25 +117,32 @@
 
                 </ul>
             </div>
-
         </div>
-        <div class="about-section">
-            <div class="img-sec child">
+        <div class="spacer-20"></div>
+        <!-- skills section  -->
+        <section class="skills">
+            <div class="skills-heading">
+                <h2><span>SKILLS</span></h2>
 
+           <ul class="main-skills">
+            <li><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
+            <li><i class="fa-brands fa-css3-alt"></i><p>CSS</p></li>
+            <li><i class="fa-brands fa-square-js"></i><p>JAVASCRIPT + ES6</p></li>
+            <li><i class="fa-brands fa-bootstrap"></i><p>BOOTSTRAP</p></li>
+            <li><i class="fa-brands fa-git-alt"></i><p>GIT</p></li>
+            <li><i class="fa-solid fa-terminal"></i><p>TERMINAL</p></li>
+            <li><i class="fa-solid fa-mobile"></i><p>RESPONSIVE <br> DESIGN</p></li>
+            <li><i class="fa-solid fa-bolt"></i><p>API</p></li>
+           </ul>
             </div>
-            <div class="myself child">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto iste vel voluptate rem molestias,
-                illo consequatur explicabo. Provident animi amet fugiat sequi dicta. Consequatur molestias numquam
-                repellat ipsam ab!
-            </div>
-        </div>
-
+        </section>
     </div>
+
     <!-- AOS script  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            disable :'mobile'
+            disable: 'mobile'
         });
     </script>
     <script src="script.js"></script>

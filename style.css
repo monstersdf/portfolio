@@ -15,7 +15,7 @@ body {
   background: var(--secondry);
   color: var(--primary);
   /* perspective: 500px; */
-  height: 1000px;
+  height: 10000px;
 }
 
 .navbar {
@@ -96,7 +96,7 @@ body {
   width: 90%;
   margin-left: 5rem;
   line-height: 1.5em;
-  font-size: 3em;
+  /* font-size: 2.8em; */
 }
 
 a {
@@ -131,10 +131,15 @@ a {
     letter-spacing: 1rem;
     filter: blur(1.5rem);
   }
-} */
-
+} 
+.role h1{
+line-height: 1em;
+font-size: 4.5rem;
+}
 .role h2 {
   font-size: 1em;
+line-height: 1.5em;
+font-size: 3em;
 }
 
 .burger div {
@@ -250,7 +255,7 @@ h1 span:nth-child(8) {
 /* about section css  */
 .about-section {
   display: flex;
-  margin: 15rem 5.5rem;
+  margin: 15em 5.5em 9.5em 5.5em;
   overflow-x: hidden;
 }
 
@@ -311,12 +316,58 @@ h1 span:nth-child(8) {
   border: none;
 }
 
+/* skills css  */
+.skills{
+  height: 100%;
+}
+.skills-heading{
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 90%;
+}
+.skills-heading h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4em;
+  font-weight: bold;
+}
+.skills-heading h2 span{
+  border-bottom: 5px solid #f06000;
+}
+.skills .main-skills{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap:.7rem;
+text-align: center;
+margin: 6em auto;
+}
+.main-skills li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.9em;
+  margin-bottom: 3em;
 
-
-
-
+}
+.main-skills li i{
+  font-size: 4em;
+  border: none;
+  line-height: 1em;
+}
+.main-skills li i:hover{
+color: #f06000;
+}
+.main-skills li p{
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.spacer-20{
+  height: 20vh;
+}
 /* media queries  */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 600px) {
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -427,9 +478,31 @@ h1 span:nth-child(8) {
     margin: 0px 0px;
   }
 
-  /* .heading{
-    font-size: 3rem;
-  } */
+  .skills .main-skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:.7rem;
+text-align: center;
+margin: 2em auto;
+width: 100%;
+  }
+  .main-skills li p{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .main-skills li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2em;
+  margin-bottom: 2em;
+  /* margin-left: auto; */
+  align-items: center;
+  }
+ .spacer-20{
+  height: 5vh;
+ }
   /* .welcome-msg{
     margin-top:30vh;
   max-width: 1180px;
