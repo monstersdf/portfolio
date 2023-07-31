@@ -302,7 +302,7 @@ h1 span:nth-child(8) {
 }
 
 .img-sec {
-  background-image: url("myimg.jpg");
+  background-image: url(myimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 620px;
