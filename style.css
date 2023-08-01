@@ -356,7 +356,8 @@ margin: 6em auto;
   line-height: 1em;
 }
 .main-skills li i:hover{
-color: #f06000;
+color: #ffa818;
+transform: scale(1.1);
 }
 .main-skills li p{
   font-size: 1em;
@@ -365,6 +366,43 @@ color: #f06000;
 }
 .spacer-20{
   height: 20vh;
+}
+/* clear background */
+h2 {
+  text-align: left;
+  /* padding: 16px; */
+  /* margin: 0; */
+}
+
+/* crops animations that exceeds one line area */
+.line {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 10px;
+ 
+}
+
+
+/* flipping class and key frames*/
+.flipX {
+  animation: 1s anim-flipX ease infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
 }
 /* media queries  */
 @media screen and (max-width: 600px) {
@@ -503,6 +541,10 @@ width: 100%;
  .spacer-20{
   height: 5vh;
  }
+ .main-skills li i:hover{
+  color: #ffa818;
+  transform: scale(1.1);
+  }
   /* .welcome-msg{
     margin-top:30vh;
   max-width: 1180px;
