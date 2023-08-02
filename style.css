@@ -545,6 +545,24 @@ width: 100%;
   color: #ffa818;
   transform: scale(1.1);
   }
+  .flipX {
+    animation: 1s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
   /* .welcome-msg{
     margin-top:30vh;
   max-width: 1180px;
