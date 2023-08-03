@@ -8,7 +8,13 @@
   --primary: #ffff;
   --secondry: #000000;
 }
-
+html{
+  overflow-x: hidden;
+}
+header{
+position: sticky;
+top: 0;
+}
 body {
   font-family: 'Sen', sans-serif;
   font-size: 16px;
@@ -16,6 +22,7 @@ body {
   color: var(--primary);
   /* perspective: 500px; */
   height: 10000px;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -25,6 +32,7 @@ body {
   height: 65px;
   padding: 0 1rem;
   margin: 0em 4em;
+  
 }
 
 .nav-links {
@@ -386,23 +394,76 @@ h2 {
 
 
 /* flipping class and key frames*/
-.flipX {
-  animation: 1s anim-flipX ease infinite;
+
+.all-projects{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1180px;
+  height: 540px;
+  margin: 6em  auto;
 }
-@keyframes anim-flipX {
-  0% {
-    opacity: 0;
-    transform: rotateX(90def);
+.amazon-image{
+  margin-right: 3.5em;
+  width: 90%;
+  flex-basis: 50%;
+}
+.amazon-image img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  /* background: black; */
+  border-radius: 10px;
+}
+.about-project{
+  margin-left: 3.5em;
+  flex-basis: 50%;
+}
+.about-project p{
+  margin: 0.5em auto;
+  font-size: 1.4em;
+}
+.heading-style{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.8em 0;
+  font-size: 1.5em;
+}
+.made-by{
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.8em;
+  align-items: flex-start;
+}
+.made-by li{
+  list-style: none;
+}
+.made-by li i{
+  font-size: 2.5em;
+    margin: 0 0.1em;
+}
+.made-by li i:hover{
+  color: #ffa818;
+  transform: scale(1.1);
   }
-  50% {
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-  100% {
-    /* animate nothing to pause animation at the end */
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
+.project-links{
+  margin: 2em 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.linkbtn{
+  border: none;
+    background: none;
+    color: #f8f8f8;
+    font-size: 0.78em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.linkbtn:hover{
+  border-bottom: 3px solid #ffa818;
 }
 /* media queries  */
 @media screen and (max-width: 600px) {
