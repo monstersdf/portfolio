@@ -21,7 +21,7 @@ body {
   background: var(--secondry);
   color: var(--primary);
   /* perspective: 500px; */
-  height: 10000px;
+  height:auto;
   overflow-x: hidden;
 }
 
@@ -150,16 +150,17 @@ line-height: 1.5em;
 font-size: 3em;
 }
 
-.burger div {
+/* .burger div {
   width: 30px;
   height: 2px;
   background: #ffff;
   margin: 5px;
-}
+} */
 
 .burger {
   display: none;
 }
+
 
 h1 span {
   font-size: 3rem;
@@ -391,7 +392,12 @@ h2 {
   margin-bottom: 10px;
  
 }
-
+.bline{
+  background: #F8F8F8;
+    height: 4px;
+    width: 45px;
+    margin-bottom: 10px;
+}
 
 /* flipping class and key frames*/
 
@@ -491,6 +497,31 @@ h2 {
 .linkbtn:hover{
   border-bottom: 3px solid #ffa818;
 }
+.container{
+  height: 100%;
+  width: 100%;
+  justify-content: start;
+  align-items: self-start;
+  display: flex;
+}
+.text{
+  font-weight: bold;
+  font-size: 3rem;
+  color: #FAFAFA;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  background: rgb(212, 15, 15);
+  /* box-shadow: 0 0 25px rgb(0,140,255); */
+  box-shadow: 0 0 5px rgb(0,140,255),
+  0 0 25px rgb(0,140,255),
+  0 0 50px rgb(0,140,255),
+  0 0 100px rgb(0,140,255);
+  
+}
+  
+.dud{
+  color: #757575;
+}
 /* media queries  */
 @media screen and (max-width: 600px) {
   .nav-links {
@@ -504,12 +535,19 @@ h2 {
     transform: translateX(100%);
     transition: 0.3s ease-in;
   }
-
+.text{
+  font-size: 1em;
+}
+.container{
+  height: auto;
+  margin: 0.5em auto;
+}
   .burger {
     display: block;
     position: absolute;
     right: 2%;
-    top: 1%;
+    top: 13%;
+    margin: 3rem auto;
   }
 
   body {
@@ -526,7 +564,9 @@ h2 {
     height: 65px;
     padding-bottom: 1rem;
   }
-
+.logo a{
+opacity: 0;
+}
   .open {
     display: block;
     display: flex;
@@ -687,6 +727,7 @@ width: 100%;
     opacity: 0;
   }
 }
+
   /* .welcome-msg{
     margin-top:30vh;
   max-width: 1180px;
