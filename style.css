@@ -399,14 +399,15 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
+  width: 80%;
   height: 540px;
   margin: 6em  auto;
 }
 .amazon-image{
-  margin-right: 3.5em;
+  margin-right: 1.5em;
   width: 90%;
   flex-basis: 50%;
+  
 }
 .amazon-image img{
   display: block;
@@ -415,9 +416,10 @@ h2 {
   border: 0;
   /* background: black; */
   border-radius: 10px;
+  width: calc(83% - 50px);
 }
 .about-project{
-  margin-left: 3.5em;
+  /* margin-left: 3.5em; */
   flex-basis: 50%;
 }
 .about-project p{
@@ -453,15 +455,39 @@ h2 {
   justify-content: flex-start;
   align-items: flex-end;
 }
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
 
-.linkbtn{
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+
+/* .linkbtn{
   border: none;
     background: none;
     color: #f8f8f8;
     font-size: 0.78em;
     text-transform: uppercase;
     font-weight: 500;
-}
+} */
 .linkbtn:hover{
   border-bottom: 3px solid #ffa818;
 }
@@ -605,6 +631,7 @@ width: 100%;
  .main-skills li i:hover{
   color: #ffa818;
   transform: scale(1.1);
+  cursor: pointer;
   }
   .flipX {
     animation: 1s anim-flipX ease infinite;
@@ -624,6 +651,42 @@ width: 100%;
       transform: rotateX(720deg);
     }
   }
+  .all-projects{
+    display: flex;
+    flex-direction: column;
+  }
+  .amazon-image{
+    width: 100%;
+    flex-basis: 100%;
+    margin-right: 0;
+    width: 100%;
+  }
+  .amazon-image img{
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .skills{
+    margin: 10rem auto;
+    text-align: center;
+}
+.project-links {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  }
+  .made-by{
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .skills-heading h2 span{
+    text-align: center;
+  }
+  .project-links span{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
   /* .welcome-msg{
     margin-top:30vh;
   max-width: 1180px;
@@ -633,4 +696,3 @@ width: 100%;
   line-height: 1.5em;
   font-size: 3em;
   } */
-}
