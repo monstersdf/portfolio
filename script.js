@@ -55,7 +55,7 @@ class TextScramble {
 
 const phrases = [
  'Ashish Singh',
-  ':)'
+ ':)'
 ]
 
 const el = document.querySelector('.text')
