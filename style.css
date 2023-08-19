@@ -25,8 +25,8 @@ body {
   background: var(--secondry);
   /* color: var(--secondry); */
   /* perspective: 500px; */
-  height: 1000rem;
   overflow-x: hidden;
+  color: var(--primary);
 }
 
 .navbar {
@@ -203,30 +203,14 @@ h1 span {
 /* dark mode css  */
 .dark{
   background: black;
-  color: #ffff !important;
+  color: #ffff;
 }
 
 .light{
   background: #fff;
   color: black !important;
 }
-/* .light .logo a{
-  color: var(--secondry) !important;
-}
-.light .nav-links{
-  color: var(--secondry);
-}
-.light .contact{
-  color: var(--secondry);
 
-}
-.light .text{
-  color: var(--secondry);
-}
-.light .myself p{
-  color: var(--secondry);
-  
-} */
 .modeChanger {
   border-radius: 50px;
   position: absolute;
@@ -799,11 +783,81 @@ input[type=submit] {
   transition: all ease .2s ;
 
 }
+.contact-us-logo ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  gap: 10rem;
+}
+.contact-us-logo ul li{
+  list-style: none;
+  transition: 0.6s ease-in;
+}
+.contact-us-logo li a i{
+  font-size: 2.5rem;
+}
+.contact-us-logo li a i:hover{
+  transform: scale(1.1);
+  color: #F06000 !important;
 
+}
+.to-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+.to-top i{
+  padding: 0.3em;
+}
+.to-top button{
+  border: none;
+  background: inherit;
+  color: var(--primary);
+}
+.to-top button:hover{
+  transform: scale3d(1.2,1.2,2)
+}
+footer{
+  text-align: center;
+}
+footer p{
+  font-size: 1rem;
+  font-weight: bold;
 
-
+}
 
 /* media queries  */
+@media screen and (max-width :1000px){
+  .project-links{
+display: flex;
+align-items: baseline;
+  }
+  .project-links span{
+    opacity: 0;
+  }
+.contact-btn{
+  margin: 0;
+}
+.myself p{
+  font-size: 1rem;
+}
+.amazon-image{
+  margin-right: 5rem;
+  margin-top: -10rem;
+}
+.amazon-image img{
+  height: auto !important;
+  width: calc(90%);
+}
+}
 @media screen and (max-width: 600px) {
   .nav-links {
     display: flex;
