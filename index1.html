@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+
+    <!-- font awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate.css cdn  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- devicons cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css"
+        integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Sen&amp;display=swap" rel="stylesheet">
+
+    <!-- AOS animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar animate__animated animate__slideInDown">
+            <div class="logo">
+                <a href="#" class="az">
+                    <i class="fa-solid fa-font">shish</i>
+
+            </div>
+
+            <ul class="nav-links">
+                <a class="active" href="index.html">
+                    <li>Home</li>
+                </a>
+                <a class="borderAnimation" href="about.html">
+                    <li>About</li>
+                </a>
+                <a class="borderAnimation">
+                    <li>Projects</li>
+                </a>
+                <a class="contact borderAnimation">
+                    <li>Get In Touch</li>
+                </a>
+            </ul>
+            <div class="burger">
+                <div class="linefirst bline"></div>
+                <div class="linesecond bline"></div>
+                <div class="linethird bline"></div>
+            </div>
+        </nav>
+        <div class="welcome-msg">
+            </p>
+            <div class="role">
+                <div class="container">
+                    <div class="text"></div>
+                </div>
+                <h2>FRONT-END</h2>
+                <h2 class="line_height">WEB-DEVELOPER</h2>
+            </div>
+            <div class="modeChanger">
+                <div class="twomodes">
+                    <div class="sun" onclick="days()">
+                        <button class="btn1"><i class="fa-regular fa-sun" style="color: #d78614;"></i></button>
+                    </div>
+                    <div class="moon" onclick="night()">
+                        <button class="btn2"><i class="fa-regular fa-moon " style="color: #d78614;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+
+        <div class="about-section">
+            <!-- <div class="about-me">
+                <h2>ABOUT ME</h2>
+                <p>/ashi-sh sin-gh/</p>
+            </div> -->
+            <div class="img-sec child" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+            </div>
+            <div class="myself child" style="overflow-x: hidden; overflow-y: hidden;" data-aos="fade-left"
+                data-aos-duration="1000" data-aos-offset="200">
+                <p class="firstpara">Hello World! I'm Ashish Singh, a Front-End Web Developer based out of Mumbai. I
+                    love combining the
+                    worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and
+                    applications.</p>
+                <p>Technology has power to change anything and society follows it.The move towards increasing
+                    inclusivity and diversity in the industry through representation is of importance to me.</p>
+                <p>
+                    I'm excited to make the hop and continue increasing my skills with the right company. Drop me a line
+                    and/or your favourite thing to make in the contact form below or check me out at:
+                </p>
+                <ul style="list-style: none;" class="contact-logo">
+                    <li><a href="https://github.com/monstersdf"><i class="fa-brands fa-github githuba"
+                                style="color: black"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-linkedin" style="color: #0a0a0a;"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-twitter" style="color: #0a0a0a;"></i>
+                        </a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook" style="color: #0a0a0a;"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="spacer-20"></div>
+        <!-- skills section  -->
+        <section class="skills">
+            <div class="skills-heading">
+                <h2><span>SKILLS</span></h2>
+
+                <ul class="main-skills">
+                    <li><i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li><i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li><i class="fa-brands fa-square-js"></i>
+                        <p>JAVASCRIPT + ES6</p>
+                    </li>
+                    <li><i class="fa-brands fa-bootstrap"></i>
+                        <p>BOOTSTRAP</p>
+                    </li>
+                    <li><i class="fa-brands fa-git-alt"></i>
+                        <p>GIT</p>
+                    </li>
+                    <li><i class="fa-solid fa-terminal"></i>
+                        <p>TERMINAL</p>
+                    </li>
+                    <li><i class="fa-solid fa-mobile"></i>
+                        <p>RESPONSIVE <br> DESIGN</p>
+                    </li>
+                    <li><i class="fa-solid fa-bolt"></i>
+                        <p>API</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="spacer-20"></div>
+        <section class="skills">
+            <div class="skills-heading">
+                <h2><span>CURRENT PROJECTS</span></h2>
+            </div>
+            <div class="all-projects">
+                <div class="amazon-image" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="200">
+                    <img src="amazon-clone-ecommerce-script1.jpg" alt="amazon">
+                </div>
+                <div class="about-project" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-offset="200">
+                    <h3 class="heading-style">Amazon</h3>
+                    <p>Life isn’t perfect but your outfit can be...</p>
+                    <p>An online store made with HTML, CSS, Vanilla JS (no external libraries!). Shop, add to your cart,
+                        and see
+                        your total. Products come from Makeup API.</p>
+                    <div class="app-used">
+                        <h4 class="heading-style">made with</h4>
+                        <ul class="made-by">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                        <div class="project-links">
+                            <a href=" https://monstersdf.github.io/AmazoneClone/" target="_blank">
+                                <!-- <button type="submit" name="" class="linkbtn">Live Demo
+                                </button> -->
+                                <button class="shadow__btn linkbtn">
+                                    Live Demo
+                                </button>
+                                <span>|</span>
+                            </a>&nbsp;&nbsp;
+                            <a href="https://github.com/monstersdf/AmazoneClone/tree/master">
+                                <!-- <button type="submit" name="" class="linkbtn btn2">Source Code
+                                </button> -->
+                                <button class="shadow__btn linkbtn">
+                                    Source Code
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <a class="btn btn--topbar submit-a-request" href="https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support">Submit a request</a> -->
+        <!-- project section ------  -->
+        <div class="spacer-20"></div>
+        <section class="skills">
+            <div class="skills-heading">
+                <h2><span>PROJECTS</span></h2>
+            </div>
+            <div class="all-projects">
+                <div class="amazon-image" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="200">
+                    <img src="85179619-creative-abstract-help-support-and-assistance-internet-web-concept-3d-render-illustration-of-the.jpg"
+                        alt="amazon">
+                </div>
+                <div class="about-project" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-offset="200">
+                    <h3 class="heading-style">Help Website</h3>
+                    <p>This is a hlep Website which is helpful in many ways...</p>
+                    <p>An online help website made with HTML, CSS, Vanilla JS.
+                        Manage organizations, teams, and projects. Use Abstract organizations, teams, and projects to
+                        organize your people and your work.
+                    </p>
+                    <div class="app-used">
+                        <h4 class="heading-style">made with</h4>
+                        <ul class="made-by">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://monstersdf.github.io/help_website/" target="_blank">
+                                <!-- <button type="submit" name="" class="linkbtn">Live Demo
+                                </button> -->
+                                <button class="shadow__btn linkbtn">
+                                    Live Demo
+                                </button>
+                                <span>|</span>
+                            </a>&nbsp;&nbsp;
+                            <a href="https://github.com/monstersdf/help_website">
+                                <!-- <button type="submit" name="" class="linkbtn btn2">Source Code
+                                </button> -->
+                                <button class="shadow__btn linkbtn">
+                                    Source Code
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section  -->
+
+        <div class="spacer-20"></div>
+        <section class="hero-contact">
+            <div class="hero-heading skills-heading">
+                <h2><span>CONTACT ME</span></h2>
+            </div>
+            <div class="inner-contact-section">
+                <div class="contact-form">
+                    <div class="container-form">
+                        <form action="/action_page.php">
+                            <!-- <label for="fname">First Name</label> -->
+                            <input type="text" id="fname" name="firstname" placeholder="YOUR NAME">
+
+                            <!-- <label for="lname">Last Name</label> -->
+                            <input type="email" id="lname" name="lastname" placeholder="YOUR EMAIL">
+
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+
+                            <div class="contact-btn">
+                                <input type="submit" value="GET IN TOUCH">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-about">
+                    <p>If you have any questions about me or my projects, or (politely) argue about the best albums of
+                        the 2010s, I'm your boy!</p>
+
+                    <p> I'm available to grab a coffee and chat! Drop a comment, question, concern, or Spotify playlist,
+                        and thanks for stopping by!</p>
+
+                    <p class="last-element">Straight shot to my inbox: <a
+                            href="https://www.gmail.com">ASHISHSINGHU72@GMAIL.COM</a></p>
+                </div>
+            </div>
+            <div class="contact-us-logo">
+                <ul>
+                    <li><a href="https://github.com/monstersdf"><i class="fa-brands fa-github githuba"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="to-top">
+                <button>
+                    <a href="/index1.html"><i class="fa-solid fa-circle-arrow-up fa-beat"></i>
+                    GO TO TOP</a>
+                </button>
+            </div>
+        </section>
+<footer>
+   <p>DESIGNED BY ASHISH SINGH 2023</p>
+</footer>
+
+        <!-- <a href="/"><button> go to top</button></a> -->
+    </div>
+    </div>
+
+
+
+    <!-- AOS script  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+    </script>
+    <script src="scramble.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
