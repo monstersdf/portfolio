@@ -78,21 +78,27 @@ burger.addEventListener("click", () => {
 });
 
 // dark mode js 
-const night = () => {
-  const moon = document.querySelector(".moon");
-  moon.addEventListener('click', () => {
-    console.log("clicked!")
-    var element = document.body;
-    element.classList.add("dark")
-  element.classList.remove('light')
-    });
+// const night = () => {
+//   const moon = document.querySelector(".moon");
+//   moon.addEventListener('click', () => {
+//     console.log("clicked!")
+//     var element = document.body;
+//     element.classList.add("dark")
+//   element.classList.remove('light')
+//     });
 
-}
-const days = () => {
-  const sun = document.querySelector('.sun');
-  sun.addEventListener('click', () => {
-    var element = document.body;
-    element.classList.add("light");
+// }
+// const days = () => {
+//   const sun = document.querySelector('.sun');
+//   sun.addEventListener('click', () => {
+//     var element = document.body;
+//     element.classList.add("light");
 
-  })
-}
+//   })
+// }
+
+
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
