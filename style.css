@@ -263,7 +263,7 @@ h1 span {
 .contact-logo li {
   flex-basis: 20%;
   text-align: center;
-  color: #F8F8F8;
+  color: var(--secondry);
 }
 
 .contact-logo li a {
@@ -272,7 +272,7 @@ h1 span {
 
 .contact-logo li a i {
   /* background-color: white; */
-  color: #ffff !important;
+  color:var(--primary);
   padding: 0.1em;
 }
 
@@ -862,9 +862,10 @@ body.dark .nav-links,
 body.dark .contact,
 body.dark .az,
 body.dark .bline,
+body.dark .contact-logo li a i,
 body.dark h1,
 body.dark .support a {
-  color: #fff;
+  color: #fff !important;
 }
 
 .checkbox {
@@ -974,7 +975,7 @@ body.dark .support a {
   body.dark .text,
   body.dark .myself p,
   body.dark .nav-links,
-  body.dark .contact,
+  body.dark .contact-logo li a i,
   body.dark .az,
   body.dark h1,
   body.dark .burger,
