@@ -9,67 +9,50 @@
   --secondry: #000000;
   --paragraphFontSize: 1.3rem;
 }
-body[theme=dark] {
-  background: #000;
-  color: #fff;
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
 }
 
-#hybrid {
-  visibility: hidden;
-}
-
-#theme-toggle {
-  visibility: hidden;
-}
-
-#theme-toggle + label {
-  content: '';
-  display: inline-block;
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
   cursor: pointer;
-  height: 80px;
-  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.2s linear;
 }
 
-#theme-toggle:not(:checked) + label {
-  background-color: gold;
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
 }
 
-#theme-toggle:checked + label {
-  background-color: transparent;
-  box-shadow: inset -18px -16px 1px 1px #fff;
-}
 
-.intro-text {
-  top: 180px;
-  font-size: 1.6em;
-  font-family: monospace;
-}
 
-[class*=text-] {
-  font-size: 1.2em;
-  font-weight: 600;
-  transition: color 500ms ease-in;
-}
 
-body[theme=dark] {
-  .text-sun {
-    color: #222;
-  }
-  .text-moon {
-    color: #fff;
-  }
-}
-
-body[theme=light] {
-  .text-sun {
-    color: #000;
-  }
-  .text-moon {
-    color: #ddd;
-  }
-}
 html {
   overflow-x: hidden;
 }
@@ -103,7 +86,7 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
-  /* color: var(--secondry); */
+  color: var(--secondry);
   font-size: 1.2rem;
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -121,7 +104,7 @@ body {
 }
 
 .contact {
-  /* color: var(--secondry); */
+  color: var(--secondry);
 }
 
 .active {
@@ -151,7 +134,7 @@ body {
 .logo a {
   font-size: 2.5rem;
   text-decoration: none;
-  /* color: var(--secondry); */
+  color: var(--secondry);
   /* transition:.3s ease all; */
   cursor: pointer;
 }
@@ -271,6 +254,30 @@ h1 span {
   color: black !important;
 }
 
+.modeChanger {
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  border: 1px solid white;
+  text-align: center;
+  width: 35px;
+  margin-right: 0.4em;
+  height: fit-content;
+  cursor: pointer;
+  height: 3em;
+}
+
+.twomodes i {
+  font-size: 1.4rem;
+  color: #f06000;
+}
+
+.twomodes button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* about section css  */
 .about-section {
   display: flex;
@@ -325,7 +332,7 @@ h1 span {
 .myself p {
   margin: 3rem 0;
   font-size: 1.3rem;
-  /* color: var(--secondry); */
+  color: var(--secondry);
   line-height: 1.6;
   letter-spacing: 1.5px;
 }
@@ -547,7 +554,7 @@ h2 {
 .text {
   font-weight: bold;
   font-size: 3rem;
-  /* color: var(--secondry); */
+  color: var(--secondry);
   line-height: 1.5em;
   text-transform: uppercase;
   box-shadow: inset 0px -6px 0px 0px #FFA818;
