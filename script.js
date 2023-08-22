@@ -102,3 +102,7 @@ const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
+document.getElementById('theme-toggle').addEventListener('click', (e) => {
+  const checked = e.target.checked;
+  document.body.setAttribute('theme', checked ? 'dark' : 'light');
+});
