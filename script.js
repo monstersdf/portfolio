@@ -1,3 +1,12 @@
+const scrollToTopBtn = document.getElementsByClassName('go-to-top');
+scrollToTopBtn[0].addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+console.log(scrollToTopBtn, 'hy');
+
 class TextScramble {
   constructor(el) {
     this.el = el
@@ -54,8 +63,8 @@ class TextScramble {
 
 
 const phrases = [
- 'Ashish Singh',
- ':)'
+  'Ashish Singh',
+  ':)'
 ]
 
 const el = document.querySelector('.text')
@@ -102,7 +111,8 @@ const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
-document.getElementById('theme-toggle').addEventListener('click', (e) => {
+const news = document.getElementById('theme-toggle')
+news.addEventListener('click', (e) => {
   const checked = e.target.checked;
   document.body.setAttribute('theme', checked ? 'dark' : 'light');
 });

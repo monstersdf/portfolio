@@ -11,7 +11,7 @@
 }
 body.dark {background-color: #292c35;} /* #9b59b6 */
 
-body.dark h1, body.dark .support a {color: #fff;}
+body.dark .to-top button, body.dark h1, body.dark .support a {color: #fff;}
 
 .checkbox {
   opacity: 0;
@@ -876,7 +876,9 @@ input[type=submit] {
 .to-top button {
   border: none;
   background: inherit;
-  color: var(--primary);
+  /* color: var(--primary); */
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .to-top button:hover {
