@@ -55,6 +55,7 @@ body.dark .to-top button, body.dark h1, body.dark .support a {color: #fff;}
 
 html {
   overflow-x: hidden;
+  cursor: pointer;
 }
 
 header {
@@ -278,10 +279,26 @@ h1 span {
   cursor: pointer;
 }
 
+
 /* about section css  */
+.about-me{
+  display: grid;
+    place-items: center;
+    /* margin: 16rem auto; */
+    margin-top: 15rem;
+}
+.about-me h2{
+  border-bottom: 5px solid #f06000;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+.about-me p{
+  font-size: 2em;
+}
 .about-section {
   display: flex;
-  margin: 15em 5.5em 9.5em 5.5em;
+  margin: 5em 5.5em 9.5em 5.5em;
   overflow-x: hidden;
 }
 
@@ -759,6 +776,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  transition: 0.5s ease-out;
 }
 
 input[type=email] {
@@ -770,6 +788,7 @@ input[type=email] {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  transition: 0.5s ease-out;
 }
 
 input[type=submit] {
@@ -785,7 +804,10 @@ input[type=submit] {
   font-family: inherit;
   font-weight: bold;
 }
-
+input:hover{
+  box-shadow: 0 0 25px rgb(191, 0, 255);
+  transform: scale(1);
+}
 .contact-btn {
   display: grid;
   place-items: center;
@@ -1099,7 +1121,7 @@ body.dark .support a {
   .img-sec {
     width: 90%;
     border: none;
-    margin-top: 20em;
+    margin-top: 5em;
     margin-left: 2em;
     margin-right: 2em;
   }
@@ -1239,6 +1261,7 @@ body.dark .support a {
 
   .contact-form {
     width: 100%;
+    order: 2;
   }
 
   .contact-btn {
@@ -1250,7 +1273,9 @@ body.dark .support a {
     width: 100%;
     margin: 1rem auto;
   }
-
+  .contact-us-logo ul {
+    gap: 3rem;
+  }
   .contact-about p a {
     font-size: 1.2rem;
   }
