@@ -17,7 +17,12 @@ body.dark .to-top button, body.dark h1, body.dark .support a {color: #fff;}
   opacity: 0;
   position: absolute;
 }
-
+.menu{
+  display: none;
+}
+.hamburger{
+  display: none;
+}
 .checkbox-label {
   background-color: #111;
   width: 50px;
@@ -58,19 +63,12 @@ html {
   cursor: pointer;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
-
 body {
   font-family: 'Sen', sans-serif;
   font-size: 16px;
-  /* background: var(--secondry); */
-  /* color: var(--secondry); */
-  /* perspective: 500px; */
   overflow-x: hidden;
   color: var(--secondry);
+
 }
 
 .navbar {
@@ -80,9 +78,7 @@ body {
   height: 65px;
   padding: 0 1rem;
   margin: 0em 4em;
-
 }
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -102,6 +98,7 @@ body {
   /* font-weight: 700; */
   padding: 0.4em 0em;
   letter-spacing: 3px;
+  transition: 0.4s ease-in;
 }
 
 .contact {
@@ -109,13 +106,14 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid var(--secondry);
+  border-bottom: 4px solid #f1c40f;
 }
 
 .nav-links a:hover {
   /* opacity: 0.6; */
+  transition: 0.4s ease-in;
   color: hsl(206, 91%, 45%);
-  /* border-bottom: 2px solid hsl(240, 50%, 10%); */
+  /* border-bottom:2px solid hsl(60, 96%, 46%); */
 }
 
 .nav-links .borderAnimation:after {
@@ -124,7 +122,7 @@ body {
   bottom: 0;
   left: 0;
   width: 0%;
-  border-bottom: 2px solid var(--secondry);
+  border-bottom: 4px solid #f1c40f;
   transition: 0.3s;
 }
 
@@ -144,6 +142,9 @@ body {
   /* transform:translate(2px,4px); */
   transform: scale(1.1)
 }
+
+
+
 
 .welcome-msg {
   margin-top: 30vh;
@@ -200,16 +201,9 @@ a {
   font-size: 3em;
 }
 
-/* .burger div {
-  width: 30px;
-  height: 2px;
-  background: #ffff;
-  margin: 5px;
-} */
-
-.burger {
+/* .burger {
   display: none;
-}
+} */
 
 
 h1 span {
@@ -250,34 +244,6 @@ h1 span {
   color: #ffff;
 }
 
-.light {
-  background: #fff;
-  color: black !important;
-}
-
-.modeChanger {
-  border-radius: 50px;
-  position: absolute;
-  right: 0;
-  border: 1px solid white;
-  text-align: center;
-  width: 35px;
-  margin-right: 0.4em;
-  height: fit-content;
-  cursor: pointer;
-  height: 3em;
-}
-
-.twomodes i {
-  font-size: 1.4rem;
-  color: #f06000;
-}
-
-.twomodes button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 
 
 /* about section css  */
@@ -548,14 +514,6 @@ h2 {
     0 0 100px rgb(0, 140, 255);
 }
 
-/* .linkbtn{
-  border: none;
-    background: none;
-    color: #f8f8f8;
-    font-size: 0.78em;
-    text-transform: uppercase;
-    font-weight: 500;
-} */
 .linkbtn:hover {
   border-bottom: 3px solid #ffa818;
 }
@@ -1031,14 +989,14 @@ body.dark .support a {
     height: auto;
     margin: 0.5em auto;
   }
-
+/* 
   .burger {
     display: block;
     position: absolute;
     right: 2%;
     top: 13%;
     margin: 3rem auto;
-  }
+  } */
   body.dark .text,
   body.dark .myself p,
   body.dark .nav-links,
@@ -1282,6 +1240,67 @@ body.dark .support a {
 
   .hero-contact {
     margin-top: 15rem;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: transparent;
+    list-style: none;
+    padding-top: 6rem;
+    width: 100vw;
+    height: max-content;
+  }
+  .menu li{
+padding: 25px 0;
+  }
+  .menu a{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* letter-spacing: 3px; */
+    text-align: right;
+  }
+  .menuIcon, .closeIcon {
+    font-size: 52px !important;
+  }
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 2.5rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
   }
 }
 

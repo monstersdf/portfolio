@@ -7,10 +7,16 @@ scrollToTopBtn[0].addEventListener('click', () => {
 });
 console.log(scrollToTopBtn, 'hy');
 
+
+
+
+
+
+//////////////////////////////////////////////////////
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.chars = '&#*+%?£@§$'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -64,7 +70,7 @@ class TextScramble {
 
 const phrases = [
   'Ashish Singh',
-  ':)'
+'&#128512;'
 ]
 
 const el = document.querySelector('.text')
@@ -86,6 +92,31 @@ burger.addEventListener("click", () => {
   navLinks.classList.toggle('open');
 });
 
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
 // dark mode js 
 // const night = () => {
 //   const moon = document.querySelector(".moon");
