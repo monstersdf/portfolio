@@ -7,21 +7,18 @@ scrollToTopBtn[0].addEventListener('click', () => {
 });
 console.log(scrollToTopBtn, 'hy');
 
-const preloader = document.querySelector('.preloader');
+// preloader jquery 
+$(document).ready(function() {
+  setTimeout(function() {
+    $('#container').addClass('loaded');
+    // Once the container has finished, the scroll appears
+    if ($('#container').hasClass('loaded')) {
+      // It is so that once the container is gone, the entire preloader section is deleted
+      $('#preloader').delay(9000).queue(function() {
+        $(this).remove();
+      });}
+  }, 2000);});
 
-const fadeEffect = setInterval(() => {
-  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
-  if (!preloader.style.opacity) {
-    preloader.style.opacity = 1;
-  }
-  if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.1;
-  } else {
-    clearInterval(fadeEffect);
-  }
-}, 200);
-
-window.addEventListener('load', fadeEffect);
 
 
 
@@ -161,3 +158,4 @@ news.addEventListener('click', (e) => {
   const checked = e.target.checked;
   document.body.setAttribute('theme', checked ? 'dark' : 'light');
 });
+
